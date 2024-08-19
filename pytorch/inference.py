@@ -213,7 +213,7 @@ def inference(args):
 
     # Paths
     # midi_path = 'results/{}_.mid'.format(get_filename(audio_path))
-    midi_path = f'{audio_path}_{model_name}.mid'
+    midi_path = f'{audio_path.replace(".wav", "")}_{model_name}.mid'
     create_folder(os.path.dirname(midi_path))
  
     # Load audio
